@@ -1,0 +1,45 @@
+.chess-pieces{
+
+border: 1px solid black;
+width: 800px;
+height: 800px;
+display: flex;
+flex-wrap: wrap;
+
+
+}
+
+.piece {
+    min-width: 12.25%;
+    height: 12.25%;
+    display: block;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 5vh;
+}
+.chess-pieces .piece:nth-child(n+1):nth-child(-n+8):nth-child(even),
+.chess-pieces .piece:nth-child(n+9):nth-child(-n+16):nth-child(odd),
+.chess-pieces .piece:nth-child(n+17):nth-child(-n+24):nth-child(even),
+.chess-pieces .piece:nth-child(n+25):nth-child(-n+32):nth-child(odd),
+.chess-pieces .piece:nth-child(n+33):nth-child(-n+40):nth-child(even),
+.chess-pieces .piece:nth-child(n+41):nth-child(-n+48):nth-child(odd),
+.chess-pieces .piece:nth-child(n+49):nth-child(-n+56):nth-child(even),
+.chess-pieces .piece:nth-child(n+57):nth-child(-n+64):nth-child(odd)
+ {
+    text-align: center;
+    background-color: aqua;
+  
+}
+span.white {
+    color: white;
+    text-shadow: 2px 2px 3px black;
+
+}
+span.pawn{
+    color: white;
+    text-shadow: 3px 3px 5px black;
+}
+
+
+
+ 
